@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Spam Comment Detector",
+    "version": "25.12.9",
+    "description": "Detects spam comments on YouTube videos using machine learning!",
+    "permissions": [
+        "activeTab", 
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["predict_spam.js", "content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["models.json"],
+            "matches": ["*://www.youtube.com/*"]
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
