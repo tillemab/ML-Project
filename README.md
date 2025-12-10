@@ -14,7 +14,7 @@ The objective of this project was to develop a Google Chrome browser extension p
 ## Getting Started
 
 ### Preparing the Models
-1. Open the `YouTube-Spam-Comment-Classifier` notebook.
+1. Open the `YouTube-Spam-Comment-Classifier` notebook. I used Python 3.10.15.
 2. Run Task 1 to load the stored comment dataset.
 3. Optionally, you can manually classify comments to add to the dataset.
     * **Note** This step requires a YouTube API Key. Visit this [guide](https://developers.google.com/youtube/v3/getting-started) to learn how to acquire 1.
